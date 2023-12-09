@@ -71,6 +71,7 @@ html {
 
 #trabalhos {
     background: repeat-y center/100% url("./images/background-projetos.jpg");
+    height: 100vh;
 }
 
 #projetos {
