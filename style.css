@@ -7,10 +7,14 @@ html {
     font-family: 'Noto Serif', serif;
 }
 
+#inicial {
+    background-color: black;
+}
+
 #fundo_inicial {
     height: 100vh;
-    background: no-repeat center/100% url("./images/background_inicial.jpg");
     text-align: center;
+    background: no-repeat center/100% url("./images/background_inicial.jpg");
 }
 
 #foto_pessoal {
@@ -63,7 +67,7 @@ html {
 
 #projetos {
     font-family: 'Roboto', sans-serif;
-    background: no-repeat center/100% url("./images/background-projetos.jpg");
+    background: repeat-y center/100% url("./images/background-projetos.jpg");
     font-family: 'Roboto', sans-serif;
     color: white;
     height: 100vh;
@@ -130,4 +134,3 @@ a {
 .carousel-dark .carousel-control-next-icon {
     filter: none;
 }
-
