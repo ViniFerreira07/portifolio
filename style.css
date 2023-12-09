@@ -31,7 +31,7 @@ html {
 
 #subtitulo {
     color: rgb(198, 198, 198);
-    font-size: 25px;
+    font-size: 24px;
 }
 
 #imagem_fundo_inicial {
@@ -103,7 +103,6 @@ html {
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: 100vh;
 }
 
 .link-projeto {
