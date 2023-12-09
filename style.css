@@ -65,12 +65,14 @@ html {
     width: 150px;
 }
 
+#trabalhos {
+    background: repeat-y center/100% url("./images/background-projetos.jpg");
+}
+
 #projetos {
     font-family: 'Roboto', sans-serif;
-    background: repeat-y center/100% url("./images/background-projetos.jpg");
     font-family: 'Roboto', sans-serif;
     color: white;
-    height: 100vh;
     text-align: center;
 }
 
@@ -133,4 +135,22 @@ a {
 
 .carousel-dark .carousel-control-next-icon {
     filter: none;
+}
+
+.titulo-projetos {
+    margin-top: 100px;
+}
+
+@media (max-width: 400px) {
+    .titulo-projetos {
+        margin-top: 150px !important;
+    }
+
+    .carouselExampleDark {
+        height: 50% !important;
+    }
+}
+
+.carousel {
+    height: 75%;
 }

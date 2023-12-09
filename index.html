@@ -15,7 +15,7 @@
         <div class="scroller">
             <section id="inicial">
                 <div id="fundo_inicial" class="d-flex flex-column justify-content-center align-items-center">
-                    <div>
+                    <div class="w-100">
                         <div>
                             <img id="foto_pessoal" src="./images/foto-vinicius.jpeg" alt="foto-vinicius">
                         </div>
@@ -28,20 +28,20 @@
             </section>
 
             <section id="trabalhos">
+                <div id="titulo_secao_projetos" class="d-flex justify-content-center">
+                    <p class="titulo-projetos">Projetos</p>
+                </div>
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center">
-                                <div id="titulo_secao_projetos" class="pt-5">
-                                    <p>Projetos</p>
-                                </div>
-                                <div>
-                                    <div id="icon_sobre_mim" class="mx-auto mt-4 mb-3">
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100" data-bs-interval="10000">
+                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center h-100">
+                                <div class="w-100">
+                                    <div id="icon_sobre_mim" class="mx-auto mb-3">
                                         <div id="area_icon_programador" class="p-5">
                                             <img id="icon_programador" src="./images/calculadora.png" alt="icon_programador">
                                         </div>
@@ -66,13 +66,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center">
-                                <div id="titulo_secao_projetos" class="pt-5">
-                                    <p>Projetos</p>
-                                </div>
-                                <div>
-                                    <div id="icon_sobre_mim" class="mx-auto mt-4 mb-3">
+                        <div class="carousel-item h-100" data-bs-interval="2000">
+                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center h-100">
+                                <div class="w-100">
+                                    <div id="icon_sobre_mim" class="mx-auto mb-3">
                                         <div id="area_icon_programador" class="p-5">
                                             <img id="icon_programador" src="./images/fork.svg" alt="icon_programador">
                                         </div>
@@ -97,13 +94,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center">
-                                <div id="titulo_secao_projetos" class="pt-5">
-                                    <p>Projetos</p>
-                                </div>
-                                <div>
-                                    <div id="icon_sobre_mim" class="mx-auto mt-4 mb-3">
+                        <div class="carousel-item h-100">
+                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center h-100">
+                                <div class="w-100">
+                                    <div id="icon_sobre_mim" class="mx-auto mb-3">
                                         <div id="area_icon_programador" class="p-5">
                                             <img id="icon_programador" src="./images/hotel.png" alt="icon_programador">
                                         </div>
@@ -129,6 +123,7 @@
                             </div>
                         </div>
                     </div>
+
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
