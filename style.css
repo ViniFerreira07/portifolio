@@ -89,8 +89,6 @@ html {
     width: 250px;
     height: 250px;
     margin-left: 150px;
-    -webkit-animation: puff-in-center 8s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite;
-	        animation: puff-in-center 8s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite;
 }
 
 #icon_programador {
@@ -141,122 +139,6 @@ section {
     font-size: 13px;
 }
 
-@-webkit-keyframes puff-in-center {
-    0% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
-      -webkit-filter: blur(5px);
-              filter: blur(5px);
-      opacity: 0;
-    }
-
-    2% {
-        -webkit-transform: scale(1.8);
-                transform: scale(1.8);
-        -webkit-filter: blur(4px);
-                filter: blur(4px);
-        opacity: 0.2;
-    }
-
-    4% {
-        -webkit-transform: scale(1.6);
-                transform: scale(1.6);
-        -webkit-filter: blur(3px);
-                filter: blur(3px);
-        opacity: 0.4;
-      }
-
-    6% {
-        -webkit-transform: scale(1.4);
-                transform: scale(1.4);
-        -webkit-filter: blur(2px);
-                filter: blur(2px);
-        opacity: 0.6;
-    }
-
-    8% {
-        -webkit-transform: scale(1.2);
-                transform: scale(1.2);
-        -webkit-filter: blur(1px);
-                filter: blur(1px);
-        opacity: 0.8;
-    }
-
-    10% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-filter: blur(0px);
-                filter: blur(0px);
-        opacity: 1;
-    }
-
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-}
-
-@keyframes puff-in-center {
-    0% {
-        -webkit-transform: scale(2);
-                transform: scale(2);
-        -webkit-filter: blur(5px);
-                filter: blur(5px);
-        opacity: 0;
-    }
-  
-    2% {
-        -webkit-transform: scale(1.8);
-                transform: scale(1.8);
-        -webkit-filter: blur(4px);
-                filter: blur(4px);
-        opacity: 0.2;
-    }
-  
-    4% {
-        -webkit-transform: scale(1.6);
-                transform: scale(1.6);
-        -webkit-filter: blur(3px);
-                filter: blur(3px);
-        opacity: 0.4;
-    }
-  
-    6% {
-        -webkit-transform: scale(1.4);
-                transform: scale(1.4);
-        -webkit-filter: blur(2px);
-                filter: blur(2px);
-        opacity: 0.6;
-    }
-
-    8% {
-        -webkit-transform: scale(1.2);
-                transform: scale(1.2);
-        -webkit-filter: blur(1px);
-                filter: blur(1px);
-        opacity: 0.8;
-    }
-  
-    10% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-filter: blur(0px);
-                filter: blur(0px);
-        opacity: 1;
-    }
-  
-    100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-filter: blur(0px);
-                filter: blur(0px);
-        opacity: 1;
-    }
-}
-  
 
 @keyframes focus-in-expand {
     0% {
