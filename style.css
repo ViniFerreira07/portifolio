@@ -48,13 +48,29 @@ html {
 }
 
 #area_sobre_mim {
-    background: no-repeat center/100% url("./images/background-sobre-mim.jpg");
+    background: repeat-y center/100% url("./images/background-projetos.jpg");
 }
 
 #titulo_sobre_mim {
     font-size: 30px;
     color: #6E85B7;
     font-weight: bold;
+}
+
+#titulo_contato {
+    font-size: 30px;
+    color: #6E85B7;
+    font-weight: bold;
+}
+
+.fa-linkedin {
+    color: #0e76a8;
+    font-size: 28px;
+}
+
+.fa-google {
+    color: #0F9D58;
+    font-size: 28px;
 }
 
 .icon_projetos {
@@ -73,8 +89,8 @@ html {
     width: 250px;
     height: 250px;
     margin-left: 150px;
-    -webkit-animation: tilt-in-top-1 5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    animation: tilt-in-top-1 5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -webkit-animation: puff-in-center 8s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite;
+	        animation: puff-in-center 8s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite;
 }
 
 #icon_programador {
@@ -124,6 +140,123 @@ section {
 .link-projeto {
     font-size: 13px;
 }
+
+@-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(5px);
+              filter: blur(5px);
+      opacity: 0;
+    }
+
+    2% {
+        -webkit-transform: scale(1.8);
+                transform: scale(1.8);
+        -webkit-filter: blur(4px);
+                filter: blur(4px);
+        opacity: 0.2;
+    }
+
+    4% {
+        -webkit-transform: scale(1.6);
+                transform: scale(1.6);
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
+        opacity: 0.4;
+      }
+
+    6% {
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+        opacity: 0.6;
+    }
+
+    8% {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        -webkit-filter: blur(1px);
+                filter: blur(1px);
+        opacity: 0.8;
+    }
+
+    10% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+                transform: scale(2);
+        -webkit-filter: blur(5px);
+                filter: blur(5px);
+        opacity: 0;
+    }
+  
+    2% {
+        -webkit-transform: scale(1.8);
+                transform: scale(1.8);
+        -webkit-filter: blur(4px);
+                filter: blur(4px);
+        opacity: 0.2;
+    }
+  
+    4% {
+        -webkit-transform: scale(1.6);
+                transform: scale(1.6);
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
+        opacity: 0.4;
+    }
+  
+    6% {
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+        opacity: 0.6;
+    }
+
+    8% {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        -webkit-filter: blur(1px);
+                filter: blur(1px);
+        opacity: 0.8;
+    }
+  
+    10% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+  
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}
+  
 
 @keyframes focus-in-expand {
     0% {
@@ -319,4 +452,8 @@ a {
 
 .carousel {
     height: 75%;
+}
+
+#contato {
+    margin-top: 120px;
 }
