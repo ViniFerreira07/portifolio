@@ -11,6 +11,10 @@ html {
     background-color: black;
 }
 
+#texto_sobre_mim {
+    font-size: 22px;
+}
+
 #fundo_inicial {
     height: 100vh;
     text-align: center;
@@ -337,5 +341,6 @@ a {
 }
 
 #contato {
-    margin-top: 120px;
+    margin-top: 80px;
+    font-size: 20px;
 }
