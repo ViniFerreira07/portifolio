@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Portifolio Vinícius</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif:wght@500&family=Raleway:wght@800&family=Roboto+Condensed:ital,wght@0,400;0,500;1,300&family=Roboto+Flex:opsz,wght@8..144,300;8..144,500;8..144,700&family=Roboto+Mono:wght@300;500;700&family=Roboto+Serif:opsz,wght@8..144,300;8..144,500;8..144,700&family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif:wght@500&family=Raleway:wght@800&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -12,173 +14,205 @@
 </head>
 <body>
     <main>
-        <div class="scroller">
-            <section id="inicial">
-                <div id="fundo_inicial" class="d-flex flex-column justify-content-center align-items-center">
-                    <div class="w-100">
-                        <div>
-                            <img id="foto_pessoal" src="./images/foto-vinicius.jpeg" alt="foto-vinicius">
-                        </div>
+        <section>
+            <nav class="col-12">
+                <ul class="nav  col-sm-8 d-flex justify-content-end align-items-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre_mim">Sobre mim</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div id="capa" class="d-flex flex-column vh-100 wh-100">
+                <div class="capa-texto">
+                    <div class="col-12 ms-4">
+                        <div class="col-11 apresentacao"><span>Meu nome é Vinícius</span></div>
+                        <div class="col-11 resumo"><span>Sou desenvolvedor full stack</span></div>
+                        <div class="col-11 resumo mb-2"><span>e estudante de Ciência da Computação</span></div>
+                        <div class="col-11 grifado"></div>
+                    </div>
+    
+                    <div class="capa-texto-2 d-flex col-6 justify-content-center ms-4">
+                        <a class="mt-4 me-3 nav-link" href="https://mail.google.com/mail/u/0/?fs=1&to=viniferreira.0177@gmail.com&su=SUBJECT&body=BODY&tf=cm"><i class="fa-solid fa-envelope"></i></a>
+                    
+                        <a class="mt-4 me-3 nav-link" href="www.linkedin.com/in/vinícius-ferreira-a723a5251"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                        <a class="mt-4 me-3 nav-link" href="https://github.com/ViniFerreira07"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
 
-                        <div class="mt-4">
-                            <span id="titulo">Vinícius Ferreira</span>
+                <div class="img-capa-div text-end">
+                    <img src="./images/capa_parte.jpg" class="img-capa" alt="capa"/>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="vw-100 vh-100">
+            <div class="titulo-secoes">
+                <p class="pt-5">Habilidades</p>
+            </div>
+
+            <div class="cards-section d-flex flex-column justify-content-center">
+                <div id="cards_habilidades" class="d-flex flex-column">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center ms-4 me-3">
+                            <div class="d-flex align-items-center justify-content-center card-tecnologias">
+                                <i class="fa-brands fa-laravel"></i>
+                            </div>
+                            <p class="texto-card">Laravel</p>
+                        </div>
+        
+                        <div class="text-center me-3">
+                            <div class="d-flex align-items-center justify-content-center card-tecnologias">
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </div>
+                            <p class="texto-card">Bootstrap</p>
+                        </div>
+        
+                        <div class="text-center me-3">
+                            <div class="d-flex align-items-center justify-content-center card-tecnologias">
+                                <i class="fa-brands fa-react"></i>
+                            </div>
+                            <p class="texto-card">React</p>
+                        </div>
+        
+                        <div class="text-center me-3">
+                            <div class="d-flex align-items-center justify-content-center card-tecnologias">
+                                <div><img class="icon-flutter" img src="./images/flutter.png"></div>
+                            </div>
+                            <p class="texto-card">Flutter</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-3">
+                        <div class="text-center ms-4 me-3">
+                            <div class="d-flex align-items-center justify-content-center card-tecnologias">
+                                <div><img class="icon-flutter" img src="./images/logo-python.png"></div>
+                            </div>
+                            <p class="texto-card">Python</p>
+                        </div>
+        
+                        <div class="text-center me-3">
+                            <div class="d-flex align-items-center justify-content-center card-tecnologias">
+                                <div class="d-flex align-items-center justify-content-center"><img class="icon-java" img src="./images/logo-java.png"></div>
+                            </div>
+                            <p class="texto-card">Java</p>
+                        </div>
+        
+                        <div class="text-center me-3">
+                            <div class="d-flex align-items-center justify-content-center card-tecnologias">
+                                <div class="d-flex align-items-center justify-content-center"><img class="icon-javascript" img src="./images/logo-javascript.png"></div>
+                            </div>
+                            <p class="texto-card">JS</p>
+                        </div>
+        
+                        <div class="text-center me-3">
+                            <div class="d-flex align-items-center justify-content-center card-tecnologias">
+                                <div><img class="icon-flutter" img src="./images/logo-sql.png"></div>
+                            </div>
+                            <p class="texto-card">SQL</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="trabalhos">
-                <div id="titulo_secao_projetos" class="d-flex justify-content-center">
-                    <p class="titulo-projetos">Projetos</p>
-                </div>
-                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <section id="projetos" class="vh-100">
+            <div class="titulo-secoes">
+                <p class="pt-5">Projetos</p>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center h-75">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner h-100">
-                        <div class="carousel-item active h-100" data-bs-interval="10000">
-                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center h-100">
-                                <div class="w-100">
-                                    <div class="icon_projetos mx-auto mb-3">
-                                        <div id="area_icon_programador" class="p-5">
-                                            <img id="icon_programador" src="./images/calculadora.png" alt="icon_programador">
-                                        </div>
-                                    </div>
-    
-                                    <div >
-                                        <div class="titulo_projeto mb-3">
-                                            <span>
-                                                Calculadora Antropométrica
-                                            </span>
-                                        </div>
-                                        <div class="texto_projeto">
-                                            <p>Projeto criado em Flutter</p>
-                                        </div>
-        
-                                        <div>
-                                            <div class="link-projeto mt-4">
-                                                <a href="#"><button class="btn-github btn"><i class="fa-brands fa-github me-1"></i> <span>Clique para acessar no GitHub</span></button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+                    <div class="carrossel carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-column text-center mb-3">
+                                <img src="./images/importador.png" class="imgs-carrossel d-block mx-auto mt-4" alt="icone-hotel">
+                                <p class="texto-carrossel">Importador de Nota Fiscal</p>
+                                <button class="btn-github btn mx-auto"><i class="fa-brands fa-github"></i> <a href="https://github.com/ViniFerreira07/ImportadorNFe">Ver no GitHub</a></button>
                             </div>
                         </div>
-                        <div class="carousel-item h-100" data-bs-interval="2000">
-                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center h-100">
-                                <div class="w-100">
-                                    <div class="icon_projetos mx-auto mb-3">
-                                        <div id="area_icon_programador" class="p-5">
-                                            <img id="icon_programador" src="./images/fork.svg" alt="icon_programador">
-                                        </div>
-                                    </div>
-    
-                                    <div >
-                                        <div class="titulo_projeto mb-3">
-                                            <span>
-                                                Sincronizador de Threads
-                                            </span>
-                                        </div>
-                                        <div class="texto_projeto">
-                                            <p>Projeto criado em C</p>
-                                        </div>
-        
-                                        <div>
-                                            <div class="link-projeto mt-4">
-                                                <a href="#"><button class="btn-github btn"><i class="fa-brands fa-github me-1"></i> <span>Clique para acessar no GitHub</span></button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item h-100">
-                            <div id="projetos" class="d-flex flex-column d-flex justify-content-center align-items-center h-100">
-                                <div class="w-100">
-                                    <div class="icon_projetos mx-auto mb-3">
-                                        <div id="area_icon_programador" class="p-5">
-                                            <img id="icon_programador" src="./images/hotel.png" alt="icon_programador">
-                                        </div>
-                                    </div>
-    
-                                    <div >
-                                        <div class="titulo_projeto mb-3">
-                                            <span>
-                                                Sistema de Hotel
-                                            </span>
-                                        </div>
-                                        <div class="texto_projeto">
-                                            <p>Projeto criado em C</p>
-                                        </div>
-        
-                                        <div>
-                                            <div class="link-projeto mt-4">
-                                                <a href="#"><button class="btn-github btn"><i class="fa-brands fa-github me-1"></i> <span>Clique para acessar no GitHub</span></button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column text-center mb-3">
+                                <img src="./images/calculadora.png" class="imgs-carrossel d-block mx-auto mt-4" alt="icone-hotel">
+                                <p class="texto-carrossel">Calculadora Antropométrica</p>
+                                <button class="btn-github btn mx-auto"><i class="fa-brands fa-github"></i> <a href="https://github.com/ViniFerreira07/CalculadoraAntropometrica">Ver no GitHub</a></button>
+                            </div>                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column text-center mb-3">
+                                <img src="./images/news.png" class="imgs-carrossel d-block mx-auto mt-4" alt="icone-hotel">
+                                <p class="texto-carrossel">Projeto Site Tecnoblog</p>
+                                <button class="btn-github btn mx-auto"><i class="fa-brands fa-github"></i> <a href="https://github.com/ViniFerreira07/ProjetoTecnoBlog">Ver no GitHub</a></button>
                             </div>
                         </div>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="sobre_mim"> 
-                <div id="area_sobre_mim" class="w-100 h-100 d-flex justify-content-center align-items-center">
-                    <div class="w-50">
-                        <div class="d-flex flex-column">
-                            <div id="titulo_sobre_mim" class="mb-4">
-                                <span>
-                                    Sobre mim
-                                </span>
-                            </div>
-                            
-                            <div id="texto_sobre_mim" class="w-75">
-                                <span>
-                                    <i>"Me chamo Vinícius e sou desenvolvedor full stack, especializado em Laravel, além de possuir aprendizado avançado em Javascript, intermediário em React.js, Flutter e conhecimento básico de Python e Java."</i>
-                                </span>
-                            </div>
-
-                            <div id="contato" class="d-flex flex-column">
-                                <div id="titulo_contato" class="mb-4">
-                                    <span>
-                                        Contato
-                                    </span>
-                                </div>
+        <section id="sobre_mim" class="d-flex flex-column vw-100">
+            <div class="items-sobre-mim">
+                <div class="items-sobre-mim-2 row d-flex justify-content-center align-items-center">
+                    <div class="sobre-mim-texto mt-5">
+                        <div class="titulo-sobre-mim mt-2">
+                            <div class="texto-sobre">Sobre</div><span class="texto-sobre-mim-destacado">mim</span>
+                        </div>
+            
+                        <div>
+                            <i class="fa-solid fa-quote-left mt-2"></i>
+                            <p class="descricao text-white">
+                                Me chamo Vinícius e sou desenvolvedor full stack, especializado em Laravel, além de possuir aprendizado avançado em Javascript, intermediário em React.js, Flutter e conhecimento básico de Python e Java.
+                            </p>
+                        </div>
+                    </div>
     
-                                <div class="d-flex flex-column">
-                                    <div class="mb-3">
-                                        <i class="fa-brands fa-google me-2"></i><span><a href="https://mail.google.com/mail/?view=cm&source=mailto&to=viniferreira.0177@gmail.com">viniferreira.0177@gmail.com</a></span>
-                                    </div>
-
-                                    <div>
-                                        <i class="fa-brands fa-linkedin me-2"></i><a href="www.linkedin.com/in/vinícius-ferreira-a723a5251">Vinícius Ferreira</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="align-self-start">
+                        <div class="foto">
+                            <img class="foto-vinicius" src="./images/foto-vinicius.png" alt="">
                         </div>
                     </div>    
+                </div>
+                
+                <div class="contato mt-3 mb-4">
+                    <p>Contato</p>
+                    <div class="texto-contatos d-flex flex-column">
+                        <div class="me-4">
+                            <a href=""><i class="icon-contato fa-solid fa-envelope me-2"></i><span>viniferreira.0177@gmail.com</span></a>
+                        </div>
     
-                    <div id="icon_sobre_mim" class="p-5">
-                        <div id="area_icon_programador">
-                            <img id="icon_programador" src="./images/programmer-icon.svg" alt="icon_programador">
+                        <div>
+                            <a href="www.linkedin.com/in/vinícius-ferreira-a723a5251"><i class="icon-contato fa-brands fa-linkedin me-2"></i><span>Vinícius Ferreira</span></a>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="mt-4"><i class="fa-solid fa-copyright"></i> - Vinicius Ferreira - 2023</p>   
+        </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
