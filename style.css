@@ -233,12 +233,6 @@ footer {
     width: 125%;
 }
 
-@media(min-width: 1400px) {
-    .img-capa {
-        width: 60%;
-    }
-}
-
 @media(min-width: 768px) and (max-width: 1300px) {
     .img-capa {
         width: 48%;
